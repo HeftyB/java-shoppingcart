@@ -62,6 +62,7 @@ public class UserServiceImpl
         User newUser = new User();
 
         newUser.setUsername(user.getUsername());
+        newUser.setPasswordNoCrypt(user.getPassword());
         newUser.setComments(user.getComments());
 
         if (user.getCarts()
